@@ -21,6 +21,6 @@ app.get('/', (req, res) => {
 app.use(express.json())
 app.use('/api/images', require('./routes/image'))
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Example app listening on port ${process.env.PORT || 3000}`)
 })  
