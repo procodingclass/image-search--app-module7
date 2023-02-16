@@ -10,9 +10,6 @@ app.use(cors({
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
 
-
-const port = 3000
-
 app.get('/', (req, res) => {
   res.send('{"hello":"hi"}')
 })
